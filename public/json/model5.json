@@ -1,0 +1,1552 @@
+{"Active": true, "BreakEventsBubbling": false, "CssClass": {
+    "SelectedCssClass": "none"
+}, "Fill": null, "JSBindingsText": null, "Name": "Instrument", "RecalculateAll": false, "Smooth": true, "Stroke": null, "Style": "", "ToolTipValue": null, "Visible": true, "Elements": [
+    {
+        "__type": "Circle:#PerpetuumSoft.Instrumentation.Model",
+        "Active": true,
+        "BreakEventsBubbling": false,
+        "CssClass": {
+            "SelectedCssClass": "none"
+        },
+        "Fill": {
+            "__type": "SolidFill:#PerpetuumSoft.Framework.Drawing",
+            "Color": {
+                "knownColor": 0,
+                "name": null,
+                "state": 2,
+                "value": 4281677109
+            }
+        },
+        "JSBindingsText": "this.setCenter(this.getInstrument().getByName('Instrument') .getBounds() .getCenter());\u000a",
+        "Name": "Circle1",
+        "RecalculateAll": false,
+        "Smooth": true,
+        "Stroke": {
+            "__type": "SimpleStroke:#PerpetuumSoft.Framework.Drawing",
+            "Width": 1,
+            "Color": {
+                "knownColor": 35,
+                "name": null,
+                "state": 1,
+                "value": 0
+            },
+            "DashLenght": 5,
+            "DotLenght": 1,
+            "SpaceLenght": 2,
+            "Style": 1
+        },
+        "Style": "Default",
+        "ToolTipValue": null,
+        "Visible": true,
+        "Center": {
+            "Height": 600,
+            "Length": 848.52813742385706,
+            "Rotation": 0.78539816339744828,
+            "Width": 600,
+            "X": 600,
+            "Y": 600
+        },
+        "Radius": 550
+    },
+    {
+        "__type": "Joint:#PerpetuumSoft.Instrumentation.Model",
+        "Active": true,
+        "BreakEventsBubbling": false,
+        "CssClass": {
+            "SelectedCssClass": "none"
+        },
+        "Fill": {
+            "__type": "EmptyFill:#PerpetuumSoft.Framework.Drawing"
+        },
+        "JSBindingsText": null,
+        "Name": "Joint2",
+        "RecalculateAll": false,
+        "Smooth": true,
+        "Stroke": {
+            "__type": "SimpleStroke:#PerpetuumSoft.Framework.Drawing",
+            "Width": 1,
+            "Color": {
+                "knownColor": 35,
+                "name": null,
+                "state": 1,
+                "value": 0
+            },
+            "DashLenght": 5,
+            "DotLenght": 1,
+            "SpaceLenght": 2,
+            "Style": 1
+        },
+        "Style": "Default",
+        "ToolTipValue": null,
+        "Visible": true,
+        "Elements": [
+            {
+                "__type": "RingSector:#PerpetuumSoft.Instrumentation.Model",
+                "Active": true,
+                "BreakEventsBubbling": false,
+                "CssClass": {
+                    "SelectedCssClass": "none"
+                },
+                "Fill": {
+                    "__type": "SolidFill:#PerpetuumSoft.Framework.Drawing",
+                    "Color": {
+                        "knownColor": 164,
+                        "name": null,
+                        "state": 1,
+                        "value": 0
+                    }
+                },
+                "JSBindingsText": "this.setCenter(this.getInstrument().getByName('Joint2') .getCenter());\u000athis.setSize(new PerfectWidgets.Framework.DataObjects.Vector((this.getInstrument().getByName('Joint2') .getRadius()*2),(this.getInstrument().getByName('Joint2') .getRadius()*2)));\u000a",
+                "Name": "Ringsector1",
+                "RecalculateAll": false,
+                "Smooth": true,
+                "Stroke": {
+                    "__type": "SimpleStroke:#PerpetuumSoft.Framework.Drawing",
+                    "Width": 1,
+                    "Color": {
+                        "knownColor": 35,
+                        "name": null,
+                        "state": 1,
+                        "value": 0
+                    },
+                    "DashLenght": 5,
+                    "DotLenght": 1,
+                    "SpaceLenght": 2,
+                    "Style": 1
+                },
+                "Style": "Default",
+                "ToolTipValue": null,
+                "Visible": true,
+                "Center": {
+                    "Height": -96.875,
+                    "Length": 607.77032308677269,
+                    "Rotation": 6.1231084375024443,
+                    "Width": 600,
+                    "X": 600,
+                    "Y": -96.875
+                },
+                "Size": {
+                    "Height": 2096.0353388781546,
+                    "Length": 2964.2416034547728,
+                    "Rotation": 0.78539816339744828,
+                    "Width": 2096.0353388781546,
+                    "X": 2096.0353388781546,
+                    "Y": 2096.0353388781546
+                },
+                "Angle": 0,
+                "StartAngle": 65,
+                "SweepAngle": 50,
+                "InternalRadius": 0.83813666726295344
+            },
+            {
+                "__type": "Line:#PerpetuumSoft.Instrumentation.Model",
+                "Active": true,
+                "BreakEventsBubbling": false,
+                "CssClass": {
+                    "SelectedCssClass": "none"
+                },
+                "Fill": {
+                    "__type": "EmptyFill:#PerpetuumSoft.Framework.Drawing"
+                },
+                "JSBindingsText": null,
+                "Name": "Line1",
+                "RecalculateAll": false,
+                "Smooth": true,
+                "Stroke": {
+                    "__type": "SimpleStroke:#PerpetuumSoft.Framework.Drawing",
+                    "Width": 10,
+                    "Color": {
+                        "knownColor": 35,
+                        "name": null,
+                        "state": 1,
+                        "value": 0
+                    },
+                    "DashLenght": 5,
+                    "DotLenght": 1,
+                    "SpaceLenght": 2,
+                    "Style": 1
+                },
+                "Style": "Default",
+                "ToolTipValue": null,
+                "Visible": true,
+                "CenterPart": 0,
+                "CenterPoint": {
+                    "Height": 781.25,
+                    "Length": 951.84853049211563,
+                    "Rotation": 0.96275997399434321,
+                    "Width": 543.75,
+                    "X": 543.75,
+                    "Y": 781.25
+                },
+                "EndPoint": {
+                    "Height": 956.25,
+                    "Length": 1100.0355107904472,
+                    "Rotation": 1.0537643743033551,
+                    "Width": 543.75,
+                    "X": 543.75,
+                    "Y": 956.25
+                },
+                "StartPoint": {
+                    "Height": 781.25,
+                    "Length": 951.84853049211563,
+                    "Rotation": 0.96275997399434321,
+                    "Width": 543.75,
+                    "X": 543.75,
+                    "Y": 781.25
+                }
+            },
+            {
+                "__type": "Line:#PerpetuumSoft.Instrumentation.Model",
+                "Active": true,
+                "BreakEventsBubbling": false,
+                "CssClass": {
+                    "SelectedCssClass": "none"
+                },
+                "Fill": {
+                    "__type": "EmptyFill:#PerpetuumSoft.Framework.Drawing"
+                },
+                "JSBindingsText": null,
+                "Name": "Line2",
+                "RecalculateAll": false,
+                "Smooth": true,
+                "Stroke": {
+                    "__type": "SimpleStroke:#PerpetuumSoft.Framework.Drawing",
+                    "Width": 10,
+                    "Color": {
+                        "knownColor": 35,
+                        "name": null,
+                        "state": 1,
+                        "value": 0
+                    },
+                    "DashLenght": 5,
+                    "DotLenght": 1,
+                    "SpaceLenght": 2,
+                    "Style": 1
+                },
+                "Style": "Default",
+                "ToolTipValue": null,
+                "Visible": true,
+                "CenterPart": 0,
+                "CenterPoint": {
+                    "Height": 781.25,
+                    "Length": 1020.3017323321567,
+                    "Rotation": 0.87213650207343341,
+                    "Width": 656.25,
+                    "X": 656.25,
+                    "Y": 781.25
+                },
+                "EndPoint": {
+                    "Height": 956.25,
+                    "Length": 1159.7750320644086,
+                    "Rotation": 0.96934161993462342,
+                    "Width": 656.25,
+                    "X": 656.25,
+                    "Y": 956.25
+                },
+                "StartPoint": {
+                    "Height": 781.25,
+                    "Length": 1020.3017323321567,
+                    "Rotation": 0.87213650207343341,
+                    "Width": 656.25,
+                    "X": 656.25,
+                    "Y": 781.25
+                }
+            },
+            {
+                "__type": "Scale:#PerpetuumSoft.Instrumentation.Model",
+                "Active": true,
+                "BreakEventsBubbling": false,
+                "CssClass": {
+                    "SelectedCssClass": "none"
+                },
+                "Fill": {
+                    "__type": "EmptyFill:#PerpetuumSoft.Framework.Drawing"
+                },
+                "JSBindingsText": null,
+                "Name": "Scale2",
+                "RecalculateAll": false,
+                "Smooth": true,
+                "Stroke": {
+                    "__type": "SimpleStroke:#PerpetuumSoft.Framework.Drawing",
+                    "Width": 1,
+                    "Color": {
+                        "knownColor": 35,
+                        "name": null,
+                        "state": 1,
+                        "value": 0
+                    },
+                    "DashLenght": 5,
+                    "DotLenght": 1,
+                    "SpaceLenght": 2,
+                    "Style": 1
+                },
+                "Style": "Default",
+                "ToolTipValue": null,
+                "Visible": true,
+                "Elements": [
+                    {
+                        "__type": "Slider:#PerpetuumSoft.Instrumentation.Model",
+                        "Active": true,
+                        "BreakEventsBubbling": false,
+                        "CssClass": {
+                            "SelectedCssClass": "none"
+                        },
+                        "Fill": {
+                            "__type": "EmptyFill:#PerpetuumSoft.Framework.Drawing"
+                        },
+                        "JSBindingsText": null,
+                        "Name": "Slider2",
+                        "RecalculateAll": false,
+                        "Smooth": true,
+                        "Stroke": {
+                            "__type": "SimpleStroke:#PerpetuumSoft.Framework.Drawing",
+                            "Width": 1,
+                            "Color": {
+                                "knownColor": 35,
+                                "name": null,
+                                "state": 1,
+                                "value": 0
+                            },
+                            "DashLenght": 5,
+                            "DotLenght": 1,
+                            "SpaceLenght": 2,
+                            "Style": 1
+                        },
+                        "Style": "Default",
+                        "ToolTipValue": null,
+                        "Visible": true,
+                        "Elements": [
+                            {
+                                "__type": "Ellipse:#PerpetuumSoft.Instrumentation.Model",
+                                "Active": true,
+                                "BreakEventsBubbling": false,
+                                "CssClass": {
+                                    "SelectedCssClass": "none"
+                                },
+                                "Fill": {
+                                    "__type": "SolidFill:#PerpetuumSoft.Framework.Drawing",
+                                    "Color": {
+                                        "knownColor": 35,
+                                        "name": null,
+                                        "state": 1,
+                                        "value": 0
+                                    }
+                                },
+                                "JSBindingsText": "this.setCenter(this.getInstrument().getByName(\"Slider2\").getPosition((this.getInstrument().getByName('Joint2') .getRadius()-84.375)));\u000a",
+                                "Name": "Ellipse1",
+                                "RecalculateAll": false,
+                                "Smooth": true,
+                                "Stroke": {
+                                    "__type": "SimpleStroke:#PerpetuumSoft.Framework.Drawing",
+                                    "Width": 1,
+                                    "Color": {
+                                        "knownColor": 35,
+                                        "name": null,
+                                        "state": 1,
+                                        "value": 0
+                                    },
+                                    "DashLenght": 5,
+                                    "DotLenght": 1,
+                                    "SpaceLenght": 2,
+                                    "Style": 1
+                                },
+                                "Style": "Default",
+                                "ToolTipValue": null,
+                                "Visible": true,
+                                "Center": {
+                                    "Height": 846.34500528492572,
+                                    "Length": 1162.7774984163932,
+                                    "Rotation": 0.81520322154162006,
+                                    "Width": 797.34035571564061,
+                                    "X": 797.34035571564061,
+                                    "Y": 846.34500528492572
+                                },
+                                "Size": {
+                                    "Height": 100,
+                                    "Length": 196.1544353309402,
+                                    "Rotation": 0.53495507378609641,
+                                    "Width": 168.75,
+                                    "X": 168.75,
+                                    "Y": 100
+                                },
+                                "Angle": 90
+                            }
+                        ],
+                        "MaxLimit": {
+                            "Kind": 0,
+                            "Value": 0
+                        },
+                        "MinLimit": {
+                            "Kind": 0,
+                            "Value": 0
+                        },
+                        "Step": 0,
+                        "Value": -59.084807674674963,
+                        "MarkerPoint": {
+                            "Height": 928.93182970630642,
+                            "Length": 1235.5236618996355,
+                            "Rotation": 0.850867599169269,
+                            "Width": 814.61915940663869,
+                            "X": 814.61915940663869,
+                            "Y": 928.93182970630642
+                        }
+                    }
+                ],
+                "Colorizer": null,
+                "Maximum": 100,
+                "Minimum": -100,
+                "Reverse": false
+            },
+            {
+                "__type": "RingSector:#PerpetuumSoft.Instrumentation.Model",
+                "Active": true,
+                "BreakEventsBubbling": false,
+                "CssClass": {
+                    "SelectedCssClass": "none"
+                },
+                "Fill": {
+                    "__type": "SolidFill:#PerpetuumSoft.Framework.Drawing",
+                    "Color": {
+                        "knownColor": 0,
+                        "name": null,
+                        "state": 2,
+                        "value": 4281677109
+                    }
+                },
+                "JSBindingsText": null,
+                "Name": "Ringsector2",
+                "RecalculateAll": false,
+                "Smooth": true,
+                "Stroke": {
+                    "__type": "EmptyStroke:#PerpetuumSoft.Framework.Drawing",
+                    "Width": 0
+                },
+                "Style": "Default",
+                "ToolTipValue": null,
+                "Visible": true,
+                "Center": {
+                    "Height": 809.375,
+                    "Length": 857.87938036183152,
+                    "Rotation": 1.2329181385546182,
+                    "Width": 284.375,
+                    "X": 284.375,
+                    "Y": 809.375
+                },
+                "Size": {
+                    "Height": 343.75,
+                    "Length": 432.51625691989892,
+                    "Rotation": 0.91862491503782662,
+                    "Width": 262.50000000000006,
+                    "X": 262.50000000000006,
+                    "Y": 343.75
+                },
+                "Angle": 0,
+                "StartAngle": 96.55,
+                "SweepAngle": 187.02,
+                "InternalRadius": 0.5
+            },
+            {
+                "__type": "RingSector:#PerpetuumSoft.Instrumentation.Model",
+                "Active": true,
+                "BreakEventsBubbling": false,
+                "CssClass": {
+                    "SelectedCssClass": "none"
+                },
+                "Fill": {
+                    "__type": "SolidFill:#PerpetuumSoft.Framework.Drawing",
+                    "Color": {
+                        "knownColor": 0,
+                        "name": null,
+                        "state": 2,
+                        "value": 4281677109
+                    }
+                },
+                "JSBindingsText": null,
+                "Name": "Ringsector3",
+                "RecalculateAll": false,
+                "Smooth": true,
+                "Stroke": {
+                    "__type": "EmptyStroke:#PerpetuumSoft.Framework.Drawing",
+                    "Width": 0
+                },
+                "Style": "Default",
+                "ToolTipValue": null,
+                "Visible": true,
+                "Center": {
+                    "Height": 812.5,
+                    "Length": 1217.146380884403,
+                    "Rotation": 0.73090670715671713,
+                    "Width": 906.25,
+                    "X": 906.25,
+                    "Y": 812.5
+                },
+                "Size": {
+                    "Height": 337.5,
+                    "Length": 439.32654426974932,
+                    "Rotation": 0.87605805059819342,
+                    "Width": 281.25,
+                    "X": 281.25,
+                    "Y": 337.5
+                },
+                "Angle": 0,
+                "StartAngle": 267.94,
+                "SweepAngle": 168.73,
+                "InternalRadius": 0.5297481190884159
+            }
+        ],
+        "Margins": {},
+        "Center": {
+            "Height": -96.875,
+            "Length": 607.77032308677269,
+            "Rotation": 6.1231084375024443,
+            "Width": 600,
+            "X": 600,
+            "Y": -96.875
+        },
+        "Dock": 0,
+        "Radius": 1048.0176694390773,
+        "StartAngle": 70,
+        "TotalAngle": 40
+    },
+    {
+        "__type": "Joint:#PerpetuumSoft.Instrumentation.Model",
+        "Active": true,
+        "BreakEventsBubbling": false,
+        "CssClass": {
+            "SelectedCssClass": "none"
+        },
+        "Fill": {
+            "__type": "EmptyFill:#PerpetuumSoft.Framework.Drawing"
+        },
+        "JSBindingsText": "this.setCenter(this.getInstrument().getByName('Circle1') .getCenter());\u000a",
+        "Name": "Joint1",
+        "RecalculateAll": false,
+        "Smooth": true,
+        "Stroke": {
+            "__type": "SimpleStroke:#PerpetuumSoft.Framework.Drawing",
+            "Width": 1,
+            "Color": {
+                "knownColor": 35,
+                "name": null,
+                "state": 1,
+                "value": 0
+            },
+            "DashLenght": 5,
+            "DotLenght": 1,
+            "SpaceLenght": 2,
+            "Style": 1
+        },
+        "Style": "Default",
+        "ToolTipValue": null,
+        "Visible": true,
+        "Elements": [
+            {
+                "__type": "Scale:#PerpetuumSoft.Instrumentation.Model",
+                "Active": true,
+                "BreakEventsBubbling": false,
+                "CssClass": {
+                    "SelectedCssClass": "none"
+                },
+                "Fill": {
+                    "__type": "EmptyFill:#PerpetuumSoft.Framework.Drawing"
+                },
+                "JSBindingsText": null,
+                "Name": "Scale1",
+                "RecalculateAll": false,
+                "Smooth": true,
+                "Stroke": {
+                    "__type": "SimpleStroke:#PerpetuumSoft.Framework.Drawing",
+                    "Width": 1,
+                    "Color": {
+                        "knownColor": 35,
+                        "name": null,
+                        "state": 1,
+                        "value": 0
+                    },
+                    "DashLenght": 5,
+                    "DotLenght": 1,
+                    "SpaceLenght": 2,
+                    "Style": 1
+                },
+                "Style": "Default",
+                "ToolTipValue": null,
+                "Visible": true,
+                "Elements": [
+                    {
+                        "__type": "Slider:#PerpetuumSoft.Instrumentation.Model",
+                        "Active": true,
+                        "BreakEventsBubbling": false,
+                        "CssClass": {
+                            "SelectedCssClass": "none"
+                        },
+                        "Fill": {
+                            "__type": "EmptyFill:#PerpetuumSoft.Framework.Drawing"
+                        },
+                        "JSBindingsText": null,
+                        "Name": "Slider1",
+                        "RecalculateAll": false,
+                        "Smooth": true,
+                        "Stroke": {
+                            "__type": "SimpleStroke:#PerpetuumSoft.Framework.Drawing",
+                            "Width": 1,
+                            "Color": {
+                                "knownColor": 35,
+                                "name": null,
+                                "state": 1,
+                                "value": 0
+                            },
+                            "DashLenght": 5,
+                            "DotLenght": 1,
+                            "SpaceLenght": 2,
+                            "Style": 1
+                        },
+                        "Style": "Default",
+                        "ToolTipValue": null,
+                        "Visible": true,
+                        "Elements": [
+                            {
+                                "__type": "Needle:#PerpetuumSoft.Instrumentation.Model",
+                                "Active": true,
+                                "BreakEventsBubbling": false,
+                                "CssClass": {
+                                    "SelectedCssClass": "none"
+                                },
+                                "Fill": {
+                                    "__type": "SolidFill:#PerpetuumSoft.Framework.Drawing",
+                                    "Color": {
+                                        "knownColor": 164,
+                                        "name": null,
+                                        "state": 1,
+                                        "value": 0
+                                    }
+                                },
+                                "JSBindingsText": "this.setStartPoint(this.getInstrument().getByName(\"Slider1\").getPosition(-46.875));\u000athis.setEndPoint(this.getInstrument().getByName(\"Slider1\").getPosition(190.78125));\u000a",
+                                "Name": "Needle1",
+                                "RecalculateAll": false,
+                                "Smooth": true,
+                                "Stroke": {
+                                    "__type": "SimpleStroke:#PerpetuumSoft.Framework.Drawing",
+                                    "Width": 1,
+                                    "Color": {
+                                        "knownColor": 35,
+                                        "name": null,
+                                        "state": 1,
+                                        "value": 0
+                                    },
+                                    "DashLenght": 5,
+                                    "DotLenght": 1,
+                                    "SpaceLenght": 2,
+                                    "Style": 1
+                                },
+                                "Style": "Default",
+                                "ToolTipValue": null,
+                                "Visible": true,
+                                "CenterPart": 0,
+                                "CenterPoint": {
+                                    "Height": 640.698897287084,
+                                    "Length": 893.836538552812,
+                                    "Rotation": 0.799197129185826,
+                                    "Width": 623.25651273547658,
+                                    "X": 623.25651273547658,
+                                    "Y": 640.698897287084
+                                },
+                                "EndPoint": {
+                                    "Height": 434.35548804156804,
+                                    "Length": 666.36271114264525,
+                                    "Rotation": 0.70999558552963737,
+                                    "Width": 505.34599316661036,
+                                    "X": 505.34599316661036,
+                                    "Y": 434.35548804156804
+                                },
+                                "StartPoint": {
+                                    "Height": 640.698897287084,
+                                    "Length": 893.836538552812,
+                                    "Rotation": 0.799197129185826,
+                                    "Width": 623.25651273547658,
+                                    "X": 623.25651273547658,
+                                    "Y": 640.698897287084
+                                },
+                                "EndWidth": 0,
+                                "NeedlePoints": [
+                                    {
+                                        "__type": "NeedlePoint:#PerpetuumSoft.Instrumentation.Model",
+                                        "Portion": 0.1,
+                                        "Width": 90
+                                    },
+                                    {
+                                        "__type": "NeedlePoint:#PerpetuumSoft.Instrumentation.Model",
+                                        "Portion": 0.15,
+                                        "Width": 750
+                                    },
+                                    {
+                                        "__type": "NeedlePoint:#PerpetuumSoft.Instrumentation.Model",
+                                        "Portion": 0.2,
+                                        "Width": 750
+                                    },
+                                    {
+                                        "__type": "NeedlePoint:#PerpetuumSoft.Instrumentation.Model",
+                                        "Portion": 0.25,
+                                        "Width": 120
+                                    },
+                                    {
+                                        "__type": "NeedlePoint:#PerpetuumSoft.Instrumentation.Model",
+                                        "Portion": 0.45,
+                                        "Width": 60
+                                    },
+                                    {
+                                        "__type": "NeedlePoint:#PerpetuumSoft.Instrumentation.Model",
+                                        "Portion": 0.5,
+                                        "Width": 270
+                                    },
+                                    {
+                                        "__type": "NeedlePoint:#PerpetuumSoft.Instrumentation.Model",
+                                        "Portion": 0.55,
+                                        "Width": 270
+                                    },
+                                    {
+                                        "__type": "NeedlePoint:#PerpetuumSoft.Instrumentation.Model",
+                                        "Portion": 0.55,
+                                        "Width": 20
+                                    },
+                                    {
+                                        "__type": "NeedlePoint:#PerpetuumSoft.Instrumentation.Model",
+                                        "Portion": 0.9,
+                                        "Width": 15
+                                    }
+                                ],
+                                "ShowMode": 0,
+                                "StartWidth": 0
+                            },
+                            {
+                                "__type": "Circle:#PerpetuumSoft.Instrumentation.Model",
+                                "Active": true,
+                                "BreakEventsBubbling": false,
+                                "CssClass": {
+                                    "SelectedCssClass": "none"
+                                },
+                                "Fill": {
+                                    "__type": "SolidFill:#PerpetuumSoft.Framework.Drawing",
+                                    "Color": {
+                                        "knownColor": 164,
+                                        "name": null,
+                                        "state": 1,
+                                        "value": 0
+                                    }
+                                },
+                                "JSBindingsText": "this.setCenter(this.getInstrument().getByName(\"Slider1\").getPosition(0));\u000a",
+                                "Name": "Circle2",
+                                "RecalculateAll": false,
+                                "Smooth": true,
+                                "Stroke": {
+                                    "__type": "EmptyStroke:#PerpetuumSoft.Framework.Drawing",
+                                    "Width": 0
+                                },
+                                "Style": "Default",
+                                "ToolTipValue": null,
+                                "Visible": true,
+                                "Center": {
+                                    "Height": 600,
+                                    "Length": 848.52813742385706,
+                                    "Rotation": 0.78539816339744828,
+                                    "Width": 600,
+                                    "X": 600,
+                                    "Y": 600
+                                },
+                                "Radius": 64.0388203202208
+                            }
+                        ],
+                        "MaxLimit": {
+                            "Kind": 0,
+                            "Value": 0
+                        },
+                        "MinLimit": {
+                            "Kind": 0,
+                            "Value": 0
+                        },
+                        "Step": 0,
+                        "Value": -29.744881296942197,
+                        "MarkerPoint": {
+                            "Height": 122.46627183154737,
+                            "Length": 349.29618790125187,
+                            "Rotation": 0.35822095047014851,
+                            "Width": 327.12358390374152,
+                            "X": 327.12358390374152,
+                            "Y": 122.46627183154737
+                        }
+                    }
+                ],
+                "Colorizer": null,
+                "Maximum": 180,
+                "Minimum": -180,
+                "Reverse": false
+            }
+        ],
+        "Margins": {},
+        "Center": {
+            "Height": 600,
+            "Length": 848.52813742385706,
+            "Rotation": 0.78539816339744828,
+            "Width": 600,
+            "X": 600,
+            "Y": 600
+        },
+        "Dock": 0,
+        "Radius": 550,
+        "StartAngle": 90,
+        "TotalAngle": 360
+    },
+    {
+        "__type": "RingSector:#PerpetuumSoft.Instrumentation.Model",
+        "Active": true,
+        "BreakEventsBubbling": false,
+        "CssClass": {
+            "SelectedCssClass": "none"
+        },
+        "Fill": {
+            "__type": "SolidFill:#PerpetuumSoft.Framework.Drawing",
+            "Color": {
+                "knownColor": 0,
+                "name": null,
+                "state": 2,
+                "value": 4281677109
+            }
+        },
+        "JSBindingsText": "this.setCenter(this.getInstrument().getByName('Circle1') .getCenter());\u000athis.setSize(new PerfectWidgets.Framework.DataObjects.Vector((this.getInstrument().getByName('Circle1') .getRadius()*2),(this.getInstrument().getByName('Circle1') .getRadius()*2)));\u000a",
+        "Name": "Ringsector4",
+        "RecalculateAll": false,
+        "Smooth": true,
+        "Stroke": {
+            "__type": "SimpleStroke:#PerpetuumSoft.Framework.Drawing",
+            "Width": 1,
+            "Color": {
+                "knownColor": 35,
+                "name": null,
+                "state": 1,
+                "value": 0
+            },
+            "DashLenght": 5,
+            "DotLenght": 1,
+            "SpaceLenght": 2,
+            "Style": 1
+        },
+        "Style": "Default",
+        "ToolTipValue": null,
+        "Visible": true,
+        "Center": {
+            "Height": 600,
+            "Length": 848.52813742385706,
+            "Rotation": 0.78539816339744828,
+            "Width": 600,
+            "X": 600,
+            "Y": 600
+        },
+        "Size": {
+            "Height": 1100,
+            "Length": 1555.6349186104046,
+            "Rotation": 0.78539816339744828,
+            "Width": 1100,
+            "X": 1100,
+            "Y": 1100
+        },
+        "Angle": 0,
+        "StartAngle": 270,
+        "SweepAngle": 360,
+        "InternalRadius": 0.77402759861890635
+    },
+    {
+        "__type": "Joint:#PerpetuumSoft.Instrumentation.Model",
+        "Active": true,
+        "BreakEventsBubbling": false,
+        "CssClass": {
+            "SelectedCssClass": "none"
+        },
+        "Fill": {
+            "__type": "EmptyFill:#PerpetuumSoft.Framework.Drawing"
+        },
+        "JSBindingsText": "this.setCenter(this.getInstrument().getByName('Circle1') .getCenter());\u000athis.setRadius(this.getInstrument().getByName('Circle1') .getRadius());\u000a",
+        "Name": "Joint3",
+        "RecalculateAll": false,
+        "Smooth": true,
+        "Stroke": {
+            "__type": "SimpleStroke:#PerpetuumSoft.Framework.Drawing",
+            "Width": 1,
+            "Color": {
+                "knownColor": 35,
+                "name": null,
+                "state": 1,
+                "value": 0
+            },
+            "DashLenght": 5,
+            "DotLenght": 1,
+            "SpaceLenght": 2,
+            "Style": 1
+        },
+        "Style": "Default",
+        "ToolTipValue": null,
+        "Visible": true,
+        "Elements": [
+            {
+                "__type": "Scale:#PerpetuumSoft.Instrumentation.Model",
+                "Active": true,
+                "BreakEventsBubbling": false,
+                "CssClass": {
+                    "SelectedCssClass": "none"
+                },
+                "Fill": {
+                    "__type": "EmptyFill:#PerpetuumSoft.Framework.Drawing"
+                },
+                "JSBindingsText": null,
+                "Name": "Scale3",
+                "RecalculateAll": false,
+                "Smooth": true,
+                "Stroke": {
+                    "__type": "SimpleStroke:#PerpetuumSoft.Framework.Drawing",
+                    "Width": 1,
+                    "Color": {
+                        "knownColor": 35,
+                        "name": null,
+                        "state": 1,
+                        "value": 0
+                    },
+                    "DashLenght": 5,
+                    "DotLenght": 1,
+                    "SpaceLenght": 2,
+                    "Style": 1
+                },
+                "Style": "Default",
+                "ToolTipValue": null,
+                "Visible": true,
+                "Elements": [
+                    {
+                        "__type": "Ticks:#PerpetuumSoft.Instrumentation.Model",
+                        "Active": true,
+                        "BreakEventsBubbling": false,
+                        "CssClass": {
+                            "SelectedCssClass": "none"
+                        },
+                        "Fill": null,
+                        "JSBindingsText": null,
+                        "Name": "Ticks1",
+                        "RecalculateAll": false,
+                        "Smooth": true,
+                        "Stroke": {
+                            "__type": "SimpleStroke:#PerpetuumSoft.Framework.Drawing",
+                            "Width": 20,
+                            "Color": {
+                                "knownColor": 164,
+                                "name": null,
+                                "state": 1,
+                                "value": 0
+                            },
+                            "DashLenght": 5,
+                            "DotLenght": 1,
+                            "SpaceLenght": 2,
+                            "Style": 1
+                        },
+                        "Style": "Default",
+                        "ToolTipValue": null,
+                        "Visible": true,
+                        "Colorizer": {
+                            "__type": "SingleColorColorizer:#PerpetuumSoft.Instrumentation.Model.Drawing",
+                            "Color": {
+                                "knownColor": 164,
+                                "name": null,
+                                "state": 1,
+                                "value": 0
+                            }
+                        },
+                        "Distance": 428.125,
+                        "Dock": 0,
+                        "MaxLimitWrapper": {
+                            "__type": "SmartValueWrapper:#PerpetuumSoft.Instrumentation.Model",
+                            "Kind": 1,
+                            "Value": -60
+                        },
+                        "MinLimitWrapper": {
+                            "__type": "SmartValueWrapper:#PerpetuumSoft.Instrumentation.Model",
+                            "Kind": 1,
+                            "Value": -90
+                        },
+                        "OriginWrapper": {
+                            "__type": "SmartValueWrapper:#PerpetuumSoft.Instrumentation.Model",
+                            "Kind": 0,
+                            "Value": 0
+                        },
+                        "Padding": 0,
+                        "Divisions": 16,
+                        "StepWrapper": {
+                            "__type": "SmartValueWrapper:#PerpetuumSoft.Instrumentation.Model",
+                            "Kind": 0,
+                            "Value": 0
+                        },
+                        "SubDivisions": 1,
+                        "SubTicksPosition": 2,
+                        "UseDescreteValues": false,
+                        "UseRoundValues": false,
+                        "Length": 62.5,
+                        "SubLength": 50
+                    },
+                    {
+                        "__type": "Ticks:#PerpetuumSoft.Instrumentation.Model",
+                        "Active": true,
+                        "BreakEventsBubbling": false,
+                        "CssClass": {
+                            "SelectedCssClass": "none"
+                        },
+                        "Fill": null,
+                        "JSBindingsText": null,
+                        "Name": "Ticks2",
+                        "RecalculateAll": false,
+                        "Smooth": true,
+                        "Stroke": {
+                            "__type": "SimpleStroke:#PerpetuumSoft.Framework.Drawing",
+                            "Width": 20,
+                            "Color": {
+                                "knownColor": 164,
+                                "name": null,
+                                "state": 1,
+                                "value": 0
+                            },
+                            "DashLenght": 5,
+                            "DotLenght": 1,
+                            "SpaceLenght": 2,
+                            "Style": 1
+                        },
+                        "Style": "Default",
+                        "ToolTipValue": null,
+                        "Visible": true,
+                        "Colorizer": {
+                            "__type": "SingleColorColorizer:#PerpetuumSoft.Instrumentation.Model.Drawing",
+                            "Color": {
+                                "knownColor": 164,
+                                "name": null,
+                                "state": 1,
+                                "value": 0
+                            }
+                        },
+                        "Distance": 428.125,
+                        "Dock": 0,
+                        "MaxLimitWrapper": {
+                            "__type": "SmartValueWrapper:#PerpetuumSoft.Instrumentation.Model",
+                            "Kind": 1,
+                            "Value": 90
+                        },
+                        "MinLimitWrapper": {
+                            "__type": "SmartValueWrapper:#PerpetuumSoft.Instrumentation.Model",
+                            "Kind": 1,
+                            "Value": 60
+                        },
+                        "OriginWrapper": {
+                            "__type": "SmartValueWrapper:#PerpetuumSoft.Instrumentation.Model",
+                            "Kind": 0,
+                            "Value": 0
+                        },
+                        "Padding": 0,
+                        "Divisions": 16,
+                        "StepWrapper": {
+                            "__type": "SmartValueWrapper:#PerpetuumSoft.Instrumentation.Model",
+                            "Kind": 0,
+                            "Value": 0
+                        },
+                        "SubDivisions": 1,
+                        "SubTicksPosition": 2,
+                        "UseDescreteValues": false,
+                        "UseRoundValues": false,
+                        "Length": 62.5,
+                        "SubLength": 50
+                    }
+                ],
+                "Colorizer": null,
+                "Maximum": 180,
+                "Minimum": -180,
+                "Reverse": false
+            }
+        ],
+        "Margins": {},
+        "Center": {
+            "Height": 600,
+            "Length": 848.52813742385706,
+            "Rotation": 0.78539816339744828,
+            "Width": 600,
+            "X": 600,
+            "Y": 600
+        },
+        "Dock": 0,
+        "Radius": 550,
+        "StartAngle": 270,
+        "TotalAngle": 360
+    },
+    {
+        "__type": "Rectangle:#PerpetuumSoft.Instrumentation.Model",
+        "Active": true,
+        "BreakEventsBubbling": false,
+        "CssClass": {
+            "SelectedCssClass": "none"
+        },
+        "Fill": {
+            "__type": "SolidFill:#PerpetuumSoft.Framework.Drawing",
+            "Color": {
+                "knownColor": 0,
+                "name": null,
+                "state": 2,
+                "value": 4281677109
+            }
+        },
+        "JSBindingsText": null,
+        "Name": "Rectangle1",
+        "RecalculateAll": false,
+        "Smooth": true,
+        "Stroke": {
+            "__type": "EmptyStroke:#PerpetuumSoft.Framework.Drawing",
+            "Width": 0
+        },
+        "Style": "Default",
+        "ToolTipValue": null,
+        "Visible": true,
+        "Center": {
+            "Height": 112.5,
+            "Length": 613.52751822962273,
+            "Rotation": 0.18440927692970827,
+            "Width": 603.125,
+            "X": 603.125,
+            "Y": 112.5
+        },
+        "Size": {
+            "Height": 112.5,
+            "Length": 120.70754947392479,
+            "Rotation": 1.1999050379822342,
+            "Width": 43.75,
+            "X": 43.75,
+            "Y": 112.5
+        },
+        "Angle": 0
+    },
+    {
+        "__type": "Label:#PerpetuumSoft.Instrumentation.Model",
+        "Active": true,
+        "BreakEventsBubbling": false,
+        "CssClass": {
+            "SelectedCssClass": "none"
+        },
+        "Fill": {
+            "__type": "SolidFill:#PerpetuumSoft.Framework.Drawing",
+            "Color": {
+                "knownColor": 164,
+                "name": null,
+                "state": 1,
+                "value": 0
+            }
+        },
+        "JSBindingsText": null,
+        "Name": "Label1",
+        "RecalculateAll": false,
+        "Smooth": true,
+        "Stroke": {
+            "__type": "EmptyStroke:#PerpetuumSoft.Framework.Drawing",
+            "Width": 0
+        },
+        "Style": "Default",
+        "ToolTipValue": null,
+        "Visible": true,
+        "Center": {
+            "Height": 118.75,
+            "Length": 608.57319044220151,
+            "Rotation": 0.19638851084489511,
+            "Width": 596.875,
+            "X": 596.875,
+            "Y": 118.75
+        },
+        "Size": {
+            "Height": 106.25,
+            "Length": 215.51174561958334,
+            "Rotation": 0.515549007458979,
+            "Width": 187.5,
+            "X": 187.5,
+            "Y": 106.25
+        },
+        "Angle": 0,
+        "Font": {
+            "Bold": 0,
+            "FamilyName": "Microsoft Sans Serif",
+            "Italic": 0,
+            "Size": 10,
+            "Strikeout": 0,
+            "Underline": 0
+        },
+        "Margins": {},
+        "Text": "D.C. ELEC.",
+        "TextAlign": 32
+    },
+    {
+        "__type": "Label:#PerpetuumSoft.Instrumentation.Model",
+        "Active": true,
+        "BreakEventsBubbling": false,
+        "CssClass": {
+            "SelectedCssClass": "none"
+        },
+        "Fill": {
+            "__type": "SolidFill:#PerpetuumSoft.Framework.Drawing",
+            "Color": {
+                "knownColor": 164,
+                "name": null,
+                "state": 1,
+                "value": 0
+            }
+        },
+        "JSBindingsText": null,
+        "Name": "Label6",
+        "RecalculateAll": false,
+        "Smooth": true,
+        "Stroke": {
+            "__type": "SimpleStroke:#PerpetuumSoft.Framework.Drawing",
+            "Width": 1,
+            "Color": {
+                "knownColor": 35,
+                "name": null,
+                "state": 1,
+                "value": 0
+            },
+            "DashLenght": 5,
+            "DotLenght": 1,
+            "SpaceLenght": 2,
+            "Style": 0
+        },
+        "Style": "Default",
+        "ToolTipValue": null,
+        "Visible": true,
+        "Center": {
+            "Height": 903.125,
+            "Length": 927.78823856793963,
+            "Rotation": 1.3397056595989996,
+            "Width": 212.5,
+            "X": 212.5,
+            "Y": 903.125
+        },
+        "Size": {
+            "Height": 75,
+            "Length": 110.57378758096333,
+            "Rotation": 0.74541947627415828,
+            "Width": 81.25,
+            "X": 81.25,
+            "Y": 75
+        },
+        "Angle": 0,
+        "Font": {
+            "Bold": 0,
+            "FamilyName": "Microsoft Sans Serif",
+            "Italic": 0,
+            "Size": 18,
+            "Strikeout": 0,
+            "Underline": 0
+        },
+        "Margins": {},
+        "Text": "L",
+        "TextAlign": 32
+    },
+    {
+        "__type": "Label:#PerpetuumSoft.Instrumentation.Model",
+        "Active": true,
+        "BreakEventsBubbling": false,
+        "CssClass": {
+            "SelectedCssClass": "none"
+        },
+        "Fill": {
+            "__type": "SolidFill:#PerpetuumSoft.Framework.Drawing",
+            "Color": {
+                "knownColor": 164,
+                "name": null,
+                "state": 1,
+                "value": 0
+            }
+        },
+        "JSBindingsText": null,
+        "Name": "Label5",
+        "RecalculateAll": false,
+        "Smooth": true,
+        "Stroke": {
+            "__type": "SimpleStroke:#PerpetuumSoft.Framework.Drawing",
+            "Width": 1,
+            "Color": {
+                "knownColor": 35,
+                "name": null,
+                "state": 1,
+                "value": 0
+            },
+            "DashLenght": 5,
+            "DotLenght": 1,
+            "SpaceLenght": 2,
+            "Style": 0
+        },
+        "Style": "Default",
+        "ToolTipValue": null,
+        "Visible": true,
+        "Center": {
+            "Height": 906.25,
+            "Length": 1344.9268102763065,
+            "Rotation": 0.73937804728159373,
+            "Width": 993.75,
+            "X": 993.75,
+            "Y": 906.25
+        },
+        "Size": {
+            "Height": 75,
+            "Length": 110.57378758096333,
+            "Rotation": 0.74541947627415828,
+            "Width": 81.25,
+            "X": 81.25,
+            "Y": 75
+        },
+        "Angle": 0,
+        "Font": {
+            "Bold": 0,
+            "FamilyName": "Microsoft Sans Serif",
+            "Italic": 0,
+            "Size": 18,
+            "Strikeout": 0,
+            "Underline": 0
+        },
+        "Margins": {},
+        "Text": "R",
+        "TextAlign": 32
+    },
+    {
+        "__type": "Label:#PerpetuumSoft.Instrumentation.Model",
+        "Active": true,
+        "BreakEventsBubbling": false,
+        "CssClass": {
+            "SelectedCssClass": "none"
+        },
+        "Fill": {
+            "__type": "SolidFill:#PerpetuumSoft.Framework.Drawing",
+            "Color": {
+                "knownColor": 164,
+                "name": null,
+                "state": 1,
+                "value": 0
+            }
+        },
+        "JSBindingsText": null,
+        "Name": "Label2",
+        "RecalculateAll": false,
+        "Smooth": true,
+        "Stroke": {
+            "__type": "EmptyStroke:#PerpetuumSoft.Framework.Drawing",
+            "Width": 0
+        },
+        "Style": "Default",
+        "ToolTipValue": null,
+        "Visible": true,
+        "Center": {
+            "Height": 731.25,
+            "Length": 943.920721313501,
+            "Rotation": 0.886231502061258,
+            "Width": 596.875,
+            "X": 596.875,
+            "Y": 731.25
+        },
+        "Size": {
+            "Height": 112.5,
+            "Length": 518.59937572272486,
+            "Rotation": 0.21866894587394195,
+            "Width": 506.25,
+            "X": 506.25,
+            "Y": 112.5
+        },
+        "Angle": 0,
+        "Font": {
+            "Bold": 0,
+            "FamilyName": "Microsoft Sans Serif",
+            "Italic": 0,
+            "Size": 10,
+            "Strikeout": 0,
+            "Underline": 0
+        },
+        "Margins": {},
+        "Text": "TURN COORDINATOR",
+        "TextAlign": 32
+    },
+    {
+        "__type": "Label:#PerpetuumSoft.Instrumentation.Model",
+        "Active": true,
+        "BreakEventsBubbling": false,
+        "CssClass": {
+            "SelectedCssClass": "none"
+        },
+        "Fill": {
+            "__type": "SolidFill:#PerpetuumSoft.Framework.Drawing",
+            "Color": {
+                "knownColor": 164,
+                "name": null,
+                "state": 1,
+                "value": 0
+            }
+        },
+        "JSBindingsText": null,
+        "Name": "Label3",
+        "RecalculateAll": false,
+        "Smooth": true,
+        "Stroke": {
+            "__type": "EmptyStroke:#PerpetuumSoft.Framework.Drawing",
+            "Width": 0
+        },
+        "Style": "Default",
+        "ToolTipValue": null,
+        "Visible": true,
+        "Center": {
+            "Height": 978.125,
+            "Length": 1145.8570073311939,
+            "Rotation": 1.0228933366654527,
+            "Width": 596.875,
+            "X": 596.875,
+            "Y": 978.125
+        },
+        "Size": {
+            "Height": 87.5,
+            "Length": 312.5,
+            "Rotation": 0.28379410920832787,
+            "Width": 300,
+            "X": 300,
+            "Y": 87.5
+        },
+        "Angle": 0,
+        "Font": {
+            "Bold": 0,
+            "FamilyName": "Microsoft Sans Serif",
+            "Italic": 0,
+            "Size": 10,
+            "Strikeout": 0,
+            "Underline": 0
+        },
+        "Margins": {},
+        "Text": "2 MIN.",
+        "TextAlign": 32
+    },
+    {
+        "__type": "Label:#PerpetuumSoft.Instrumentation.Model",
+        "Active": true,
+        "BreakEventsBubbling": false,
+        "CssClass": {
+            "SelectedCssClass": "none"
+        },
+        "Fill": {
+            "__type": "SolidFill:#PerpetuumSoft.Framework.Drawing",
+            "Color": {
+                "knownColor": 164,
+                "name": null,
+                "state": 1,
+                "value": 0
+            }
+        },
+        "JSBindingsText": null,
+        "Name": "Label4",
+        "RecalculateAll": false,
+        "Smooth": true,
+        "Stroke": {
+            "__type": "EmptyStroke:#PerpetuumSoft.Framework.Drawing",
+            "Width": 0
+        },
+        "Style": "Default",
+        "ToolTipValue": null,
+        "Visible": true,
+        "Center": {
+            "Height": 1090.625,
+            "Length": 1241.7737125277697,
+            "Rotation": 1.0722529791134516,
+            "Width": 593.75,
+            "X": 593.75,
+            "Y": 1090.625
+        },
+        "Size": {
+            "Height": 75,
+            "Length": 339.63445422983813,
+            "Rotation": 0.22266094063636496,
+            "Width": 331.25,
+            "X": 331.25,
+            "Y": 75
+        },
+        "Angle": 0,
+        "Font": {
+            "Bold": 0,
+            "FamilyName": "Microsoft Sans Serif",
+            "Italic": 0,
+            "Size": 7,
+            "Strikeout": 0,
+            "Underline": 0
+        },
+        "Margins": {},
+        "Text": "NO PITCH INFORMATION",
+        "TextAlign": 32
+    },
+    {
+        "__type": "Rectangle:#PerpetuumSoft.Instrumentation.Model",
+        "Active": false,
+        "BreakEventsBubbling": false,
+        "CssClass": {
+            "SelectedCssClass": "none"
+        },
+        "Fill": {
+            "__type": "SolidFill:#PerpetuumSoft.Framework.Drawing",
+            "Color": {
+                "knownColor": 0,
+                "name": null,
+                "state": 2,
+                "value": 16711680
+            }
+        },
+        "JSBindingsText": null,
+        "Name": "Cap",
+        "RecalculateAll": false,
+        "Smooth": true,
+        "Stroke": null,
+        "Style": "",
+        "ToolTipValue": null,
+        "Visible": true,
+        "Center": {
+            "Height": 600,
+            "Length": 848.52813742385706,
+            "Rotation": 0.78539816339744828,
+            "Width": 600,
+            "X": 600,
+            "Y": 600
+        },
+        "Size": {
+            "Height": 1200,
+            "Length": 1697.0562748477141,
+            "Rotation": 0.78539816339744828,
+            "Width": 1200,
+            "X": 1200,
+            "Y": 1200
+        },
+        "Angle": 0
+    }
+], "Enabled": true, "Focused": false, "GridStep": 50, "IsFixed": false, "MeasureUnit": {}, "ShadowDX": 0, "ShadowDY": 0, "ShadowFill": {
+    "__type": "EmptyFill:#PerpetuumSoft.Framework.Drawing"
+}, "ShowGrid": true, "Size": {
+    "Height": 1200,
+    "Length": 1697.0562748477141,
+    "Rotation": 0.78539816339744828,
+    "Width": 1200,
+    "X": 1200,
+    "Y": 1200
+}, "SnapToGrid": false, "StubBevel": null, "Styles": [
+    {
+        "__type": "Style:#PerpetuumSoft.Instrumentation.Styles",
+        "Fill": {
+            "__type": "EmptyFill:#PerpetuumSoft.Framework.Drawing"
+        },
+        "Font": {
+            "Bold": 0,
+            "FamilyName": "Microsoft Sans Serif",
+            "Italic": 0,
+            "Size": 10,
+            "Strikeout": 0,
+            "Underline": 0
+        },
+        "Image": null,
+        "Name": "Default",
+        "Stroke": {
+            "__type": "EmptyStroke:#PerpetuumSoft.Framework.Drawing",
+            "Width": 0
+        }
+    }
+]}
