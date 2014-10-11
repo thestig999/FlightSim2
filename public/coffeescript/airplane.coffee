@@ -7,7 +7,7 @@
 
 
 class Airplane
-    constructor: (override) ->
+    constructor: (@overrides, @world) ->
         @settings =
             # The throttle regulates the amount of fuel flowing into the engine. Pressing W (full throttle) the engine
             # develops maximum power.  Press S to decrease the amount of fuel and power
@@ -56,6 +56,129 @@ class Airplane
                 passengers:    "234kg"
                 cargo:         "4kg"
             }
+
+        @movement = new Movement world.camera
+        @movementChanges =
+            moveSpeed: 10
+            lookSpeed: 0.075
+            noFly: true
+        @movement.changeSettings @movementChanges
+
+        @world.addAirplane this
+
+    update: (delta) =>
+        @movement.update delta
+
+    setupEventListeners: =>
+        container = @world.container
+        container.addEventListener( 'mousemove', @onMouseMove, false )
+        container.addEventListener( 'mousedown', @onMouseDown, false )
+        container.addEventListener( 'mouseup', @onMouseUp false )
+        container.addEventListener( 'keydown', bind( this, @onKeyDown ), false )
+@domElement.addEventListener( 'keyup', bind( this, @onKeyUp ), false )
+
+
+onMouseDown: (event) =>
+
+    onMouseUp: (event) =>
+        event.preventDefault()
+        event.stopPropagation()
+
+        @mouseDragOn = false
+
+        if @clickMove
+            changes = {}
+            switch event.button
+                when 0
+                    changes.moveForward = false
+                when 2
+                    changes.moveBackward = false
+                else
+                    changes = {}
+
+            @movement.changeSettings changes
+
+    onMouseMove: (event) =>
+        if @domElement is document
+            @mouseX = event.pageX - @viewHalfX
+            @mouseY = event.pageY - @viewHalfY
+        else
+            @mouseX = event.pageX - @domElement.offsetLeft - @viewHalfX
+            @mouseY = event.pageY - @domElement.offsetTop - @viewHalfY
+            
+    onKeyDown: (event) =>
+        changes = {}
+        switch event.keyCode
+            when 38: # up
+                changes.moveForward = true
+
+            when 87: # W
+                changes.moveForward = true
+            
+            when 37: # left
+                changes.moveLeft = true
+
+            when 65: # A
+                changes.moveLeft = true
+            
+            when 40: # down
+                changes.moveBackward = true
+
+            when 83: # S
+                changes.moveBackward = true
+
+            when 39: # right
+                changes.moveRight = true
+
+            when 68: # D
+                changes.moveRight = true
+
+            when 82: # R
+                changes.moveUp = true
+
+            when 70: # F
+                changes.moveDown = true
+
+            when 81: # Q
+                changes.freeze = !@freeze
+
+            else
+                changes = {}
+
+        @movement.changeSetting changes
+
+
+
+
+
+
+
+
+@onKeyUp: ( event ) {
+
+    switch( event.keyCode ) {
+
+        when 38: /*up*/
+        when 87: /*W*/ @moveForward = false break
+
+when 37: /*left*/
+when 65: /*A*/ @moveLeft = false break
+
+when 40: /*down*/
+when 83: /*S*/ @moveBackward = false break
+
+when 39: /*right*/
+when 68: /*D*/ @moveRight = false break
+
+when 82: /*R*/ @moveUp = false break
+when 70: /*F*/ @moveDown = false break
+
+}
+
+}
+
+
+
 
 
 
