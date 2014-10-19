@@ -139,20 +139,16 @@ class Cockpit
     airSpeedMovementHandler:  (sender, e) =>
         @airSpeedWidget.getByName("Slider2").recalculate()
 
-    updateInstruments: =>
-        clearTimeout @timeoutId
-        @pitchValue = @pitchValue + @nextInt -20,20
-        newRoll = @rollValue + @nextInt -30,30
-        if Math.abs(newRoll) < 90
-          @rollValue = newRoll
+    updateInstruments: (settings) =>
+        @pitchValue = settings.pitchValue
+        @rollValue  = settings.rollValue
 
         @turnRollSlider.setValue @rollValue
         @rollSlider.setValue @rollValue
         @pitch.setValue @pitchValue
 
-        @heightSlider.setValue @heightSlider.getValue() + @nextInt(-500,500)
-        @directionSlider.setValue @directionSlider.getValue() + @nextInt(-90,90)
-        @airSpeedSlider.setValue @airSpeedSlider.getValue() + @nextInt(-20,20)
-        @slipSlider.setValue @nextInt(-100,100)
-        @verticalSpeedSlider.setValue @verticalSpeedSlider.getValue() + @nextDouble(-1,1)
-        @timeoutId = window.setTimeout @updateInstruments, @timeOutMiliseconds
+        @heightSlider.setValue settings.heightSlider
+        @directionSlider.setValue settings.directionSlider
+        @airSpeedSlider.setValue settings.airSpeedSlider
+        @slipSlider.setValue settings.slipSlider
+        @verticalSpeedSlider.setValue settings.verticalSpeedSlider

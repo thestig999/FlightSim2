@@ -67,5 +67,3 @@ class World
         if @renderer
             @renderer.setSize @width, @height
 
-
-$(window).resize world.resize

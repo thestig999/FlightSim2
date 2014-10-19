@@ -174,5 +174,8 @@ class Airplane
             else
                 console.log "Key not found #{keyCode}"
 
+    resize: =>
+        @cockpit.resize()
+
     update: (delta) =>
         console.log "#{delta}"

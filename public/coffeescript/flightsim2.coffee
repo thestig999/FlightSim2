@@ -6,7 +6,7 @@ class FlightSim2
     constructor: (container) ->
         @weather = new Weather {}
         @world = new World @weather
-#        @airplane = new Airplane {}, @world
+        @airplane = new Airplane {}, @world
 
     start: =>
         @world.animate()
@@ -17,7 +17,10 @@ $(document).ready ->
     flightSim2 = new FlightSim2()
     flightSim2.start()
 
-
+#$(window).resize ()->
+#    flightSim2.world.resize()
+#    flightSim2.airplane.resize()
+#
 
 #
 #cockpit = new Cockpit()
