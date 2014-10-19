@@ -1,13 +1,22 @@
 
 
-weatherEvents     = [ "Clear", "Partly Cloudy", "Cloudy", "Rain", "Snow", "Fog", "Storm", "Blizzard" ]
+weatherEvent     = [ "Clear", "Partly Cloudy", "Cloudy", "Rain", "Snow", "Fog", "Storm", "Blizzard" ]
 weatherTurbulence = [ "None", "Light", "Moderate", "Severe" ]
 
 weatherDefaults =
-    visibility: "50km"
+    visibility: "50mi"
+    windDirection: 0
+    windVelocity:  0
+    windGusts:     0
+    turbulence:    weatherTurbulence["None"]
+    oat:           75
+    event:         weatherEvent["Clear"]
+    timeOfDay:     1400
 
 class Weather
-    constructor: ( @visibility, @windDirection, @windVelocity, @windGusts, @turbulence, @oat, @event, @timeOfDay ) ->
+    constructor: (overrides) ->
+        @settings = weatherDefaults
+
 
 
 

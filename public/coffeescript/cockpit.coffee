@@ -66,6 +66,7 @@ class Cockpit
 
     isLoaded: =>
         return model.airSpeed? and model.altimeter? and model.attitudeIndicator? and model.headingIndicator? and model.turnCoordinator? and model.verticalSpeedIndicator?
+
     resize: =>
         if @isLoaded()
             console.log "resize()"
@@ -155,30 +156,3 @@ class Cockpit
         @slipSlider.setValue @nextInt(-100,100)
         @verticalSpeedSlider.setValue @verticalSpeedSlider.getValue() + @nextDouble(-1,1)
         @timeoutId = window.setTimeout @updateInstruments, @timeOutMiliseconds
-
-cockpit = new Cockpit()
-
-window.FourJGames = {}
-window.FourJGames.Cockpit = {}
-
-window.FourJGames.Cockpit.reloadWidget = () ->
-    cockpit.reloadWidget()
-
-window.FourJGames.Cockpit.resize = () ->
-    cockpit.resize()
-
-
-window.addEventListener 'load', window.FourJGames.Cockpit.reloadWidget
-
-window.onresize = (event) ->
-    window.FourJGames.Cockpit.resize()
-
-
-# vertical progress
-$('.skill').on('click', 'button', function(){
-    var skillBar = $(this).siblings().find('.inner');
-    var skillVal = skillBar.attr("data-progress");
-    $(skillBar).animate({
-        height: skillVal
-    }, 1500);
-});

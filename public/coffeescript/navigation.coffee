@@ -1,7 +1,6 @@
 
 
-
-class Movement
+class Navigation
     constructor: (camera) ->
         @camera = camera
         @container = container
@@ -117,11 +116,11 @@ class Movement
 
         @camera.lookAt targetPosition
 
-
-    $(window).focus(function() {
-        if (@flight) @flight.freeze = false
-    })
-    $(window).blur(function() {
-        if (@flight) @flight.freeze = true
-    })
-
+#
+#    $(window).focus(function() {
+#        if (@flight) @flight.freeze = false
+#    })
+#    $(window).blur(function() {
+#        if (@flight) @flight.freeze = true
+#    })
+#
