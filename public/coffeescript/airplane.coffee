@@ -9,7 +9,7 @@ class Airplane
         @settings =
             # The throttle regulates the amount of fuel flowing into the engine. Pressing W (full throttle) the engine
             # develops maximum power.  Press S to decrease the amount of fuel and power
-            throttle:        0    # Range from 0 to 10 (full throttle
+            throttle:        0    # Range from 0 to 10 (full throttle)
 
             # There are two indicators on the screen directly related to the throttle control.  Theses are the Airspeed
             # and Power indicators.  Your jet will crash due to over speed if you exceed 375 knots.
@@ -67,7 +67,7 @@ class Airplane
             verticalSpeedSlider: 0
             yoke:                0
 
-        @cockpit = new Cockpit @instruments
+        @cockpit = window.flightSim2.initCockpit @instruments
         @world.addAirplane this
         @map =
             locationX:         100
@@ -75,7 +75,8 @@ class Airplane
             locationZ:         100
             heading:             0
 
-        @navigation = new Navigation world.camera, @map
+        @navigation = window.flightSim2.initNavigation @world.camera, @map
+        @session    = window.flightSim2.initSession()
 
         @keymap =
             arrowUp:    false   # keyboard up
@@ -101,6 +102,10 @@ class Airplane
             mouseWheel: 0       # Mouse Wheel
             mouseX:     0       # Mouse motion horizontal
             mouseY:     0       # Mouse motion verticle
+
+    start: =>
+        @cockpit.reloadWidget()
+        @setupEventListeners()
 
     setupEventListeners: =>
         container = @world.container
@@ -178,4 +183,24 @@ class Airplane
         @cockpit.resize()
 
     update: (delta) =>
-        console.log "#{delta}"
+        @updateSession delta
+        @updateInstruments delta
+        @updateNavigation delta
+
+    updateSession: (delta) =>
+
+    updateInstruments: (delta) =>
+
+    updateNavigation: (delta) =>
+
+
+
+    degInRad: (deg) =>
+        return deg * Math.PI / 180
+
+if !window.flightSim2?
+    window.flightSim2 = {}
+
+window.flightSim2.initAirplane = (overrides, world) ->
+    airplane = new Airplane overrides, world
+    return airplane

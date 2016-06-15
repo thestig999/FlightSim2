@@ -3,7 +3,6 @@
 class Navigation
     constructor: (camera) ->
         @camera = camera
-        @container = container
         @target = new THREE.Vector3 0, 0, 0
 
         @settings =
@@ -116,11 +115,9 @@ class Navigation
 
         @camera.lookAt targetPosition
 
-#
-#    $(window).focus(function() {
-#        if (@flight) @flight.freeze = false
-#    })
-#    $(window).blur(function() {
-#        if (@flight) @flight.freeze = true
-#    })
-#
+if !window.flightSim2?
+    window.flightSim2 = {}
+
+window.flightSim2.initNavigation = (camera, location) ->
+    navigation = new Navigation camera
+    return navigation

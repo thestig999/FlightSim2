@@ -1,15 +1,36 @@
 doctype html
 html
   head
-    title "FlightSim 2"
+    title "FlightSim II"
     link(rel='stylesheet', href='/stylesheets/style.css')
     script(type='text/javascript', src='/javascripts/jquery.min.1.11.1.js')
+    script(type='text/javascript', src='/javascripts/three.js')
     script(type='text/javascript', src='/javascripts/mscorlib.js')
     script(type='text/javascript', src='/javascripts/PerfectWidget.js')
     script(type='text/javascript', src='/javascripts/cockpit.js')
     script(type='text/javascript', src='/javascripts/navigation.js')
     script(type='text/javascript', src='/javascripts/airplane.js')
     script(type='text/javascript', src='/javascripts/weather.js')
+    script(type='text/javascript', src='/javascripts/world.js')
     script(type='text/javascript', src='/javascripts/flightsim2.js')
-  body
-    block content
+    script(type='x-shader/x-vertex', id='vertexShader').
+        varying vec3 vWorldPosition;
+        void main()
+        {
+            vec4 worldPosition = modelMatrix * vec4( position, 1.0 );
+            vWorldPosition = worldPosition.xyz;
+            gl_Position = projectionMatrix * modelViewMatrix * vec4( position, 1.0 );
+        }
+    script(type='x-shader/x-fragment', id='fragmentShader').
+        uniform vec3 topColor;
+        uniform vec3 bottomColor;
+        uniform float offset;
+        uniform float exponent;
+        varying vec3 vWorldPosition;
+        void main()
+        {
+            float h = normalize( vWorldPosition + offset ).y;
+            gl_FragColor = vec4( mix( bottomColor, topColor, max( pow( max( h , 0.0), exponent ), 0.0 ) ), 1.0 );
+        }
+    body
+      block content

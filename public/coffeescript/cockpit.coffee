@@ -90,13 +90,13 @@ class Cockpit
             @turnCoordinatorWidget = new PerfectWidgets.Widget "turnCoordinator", model.turnCoordinator
             @verticalSpeedIndicatorWidget = new PerfectWidgets.Widget "verticalSpeedIndicator", model.verticalSpeedIndicator
 
-            @grabAttitudeIndicatorSliders()
-            @grabAltimeterSliders()
-            @grabAirSpeedWidgetSliders()
-            @grabHeadingIndicatorSliders()
-            @grabTurnCoordinatorSliders()
-            @grabVerticalSpeedSliders()
-            @timeoutId = window.setTimeout @updateInstruments, @timeOutMiliseconds
+#            @grabAttitudeIndicatorSliders()
+#            @grabAltimeterSliders()
+#            @grabAirSpeedWidgetSliders()
+#            @grabHeadingIndicatorSliders()
+#            @grabTurnCoordinatorSliders()
+#            @grabVerticalSpeedSliders()
+#            @timeoutId = window.setTimeout @updateInstruments, @timeOutMiliseconds
         else
             window.setTimeout @reloadWidget, @timeOutMiliseconds
 
@@ -152,3 +152,10 @@ class Cockpit
         @airSpeedSlider.setValue settings.airSpeedSlider
         @slipSlider.setValue settings.slipSlider
         @verticalSpeedSlider.setValue settings.verticalSpeedSlider
+
+if !window.flightSim2?
+    window.flightSim2 = {}
+
+window.flightSim2.initCockpit = (settings) ->
+    cockpit = new Cockpit()
+    return cockpit

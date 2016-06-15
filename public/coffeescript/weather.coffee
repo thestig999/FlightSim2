@@ -18,8 +18,12 @@ class Weather
         @settings = weatherDefaults
 
 
+if !window.flightSim2?
+    window.flightSim2 = {}
 
-
+window.flightSim2.initWeather = (overrides) ->
+    weather = new Weather()
+    return weather
 
 
 
